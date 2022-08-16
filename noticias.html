@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?familu=Roboto">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS ESTILOS PROPIOS -->
     <link rel="stylesheet" href="estilos.css">
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <!--FAVICON-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>NOTICIAS | TORNEO DE CLUBES FOOTBALL AMERICANO</title>
+    <title>TORNEO DE CLUBES FOOTBALL AMERICANO</title>
 </head>
     <body>
-        <div class="contenedorNoticias">
+        <div class="container">
             <!-- Encabezado -->
             <header id="encabezado">
                 <div class="navClubes">
-                    <h5>Sitio Web Clubes</h5>
+                    <h1 class="h6">Sitio Web Clubes</h1>
                     <a target="_blank" href="https://www.facebook.com/C.D.Canoneros" class="logoClub"><img src="Imagenes/logoCanoneros.png" alt="Logo Canoneros"></a>
                     <a target="_blank" href="https://www.facebook.com/ferroviariosPuenteAlto" class="logoClub"><img src="./Imagenes/logoFerro.png" alt="Logo Ferro"></a>
                     <a target="_blank" href="https://www.facebook.com/profile.php?id=100063737465365" class="logoClub"><img src="./Imagenes/logoFelinos.png" alt="Logo Felinos"></a>
@@ -26,92 +28,98 @@
                     <a target="_blank" href="https://www.facebook.com/PatriotasFootballAmericano" class="logoClub"><img src="./Imagenes/logoPatriotas.png" alt="Logo Patriotas"></a>
                     <a target="_blank" href="https://www.facebook.com/VolcanosFootball" class="logoClub"><img src="./Imagenes/logoVolcanos.png" alt="Logo Volcanos"></a>
                 </div>
-                <div class="menu">
-                    <img class="logoLiga" src="Imagenes/logoLiga.png" alt="Logo Liga">
-                    <nav id="menuNavegador">
-                        <ul class="menuHorizontal">
-                            <li><a href="index.html">INICIO</a></li>
-                            <li><a href="noticias.html">NOTICIAS</a></li>
-                            <li><a href="partidos.html">PARTIDOS</a></li>
-                            <li><a href="galerias.html">GALERIAS</a></li>
-                            <li><a href="clubes.html">CLUBES</a></li>
-                            <li><a href="contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </nav>
+                <hr>
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid menuHorizontal ">
+                      <a class="navbar-brand" href="index.html"><img src="Imagenes/logoLiga.png" alt="" width="250" height="me-auto">
+                      </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="partidos.html">PARTIDOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">GALERIAS</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="galerias.html">FOTOGALERIA</a></li>
+                              <li><a class="dropdown-item" href="galerias.html">VIDEOGALERIA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="clubes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLUBES</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">CAÑONEROS</a></li>
+                              <li><a class="dropdown-item" href="#">FERROVIARIOS</a></li>
+                              <li><a class="dropdown-item" href="#">FELINOS</a></li>
+                              <li><a class="dropdown-item" href="#">HUSARES</a></li>
+                              <li><a class="dropdown-item" href="#">PATRIOTAS</a></li>
+                              <li><a class="dropdown-item" href="#">VOLCANOS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>   
+                    </div>
                 </div>
+                </nav>
             </header>
             <!-- Contenido -->
-            <div class="tNotPrincipal">
-                <h3>NOTICIAS</h3>
+            <section class="py-1 text-center container">
+                <div class="row py-lg-5">
+                  <div class="col mx-auto">
+                    <h1 class="fw-light">NOTICIAS TORNEO FOOTBALL AMERICANO 2022</h1>
+                  </div>
+                </div>
+              </section>
+              <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="#">
+                                    <img src="Imagenes/portadaVideoGaleriaIndex.jpg" alt="" width="100%" height="225">
+                                </a>
+                                <div class="card-body">
+                                <h5>INICIO TORNEO FOOTBALL AMERICANO 2022</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea ullam cumque.</p>
+                                <div class="d-flex justify-content-between align-items-center"></div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="#">
+                                    <img src="Imagenes/GALERÍA FOTOS/galeriaPatriotas.png" alt="" width="100%" height="225">
+                                </a>
+                                <div class="card-body">
+                                <h5>SE BUSCAN JUGADORES</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea ullam cumque.</p>
+                                <div class="d-flex justify-content-between align-items-center"></div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <a href="#">
+                                    <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="" width="100%" height="225">
+                                </a>
+                                <div class="card-body">
+                                <h5>FELINOS CAMPEON TORNEO ADULTO 2021</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea ullam cumque.</p>
+                                <div class="d-flex justify-content-between align-items-center"></div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
             </div>
-            <main class="notPrincipal">
-                <div>
-                    <h1>TORNEO DE CLUBES MAS GRANDE DE CHILE</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi repellat nobis minima. Ab tempore, recusandae ipsa sed nam, molestias tempora consequuntur impedit ad quis nostrum. Voluptate eos neque commodi quisquam? <br></p>
-                </div>
-                <div>
-                    <img src="./Imagenes/NOTICIAS/torneoDeClubes.jpg" alt="Torneo de Clubes">
-                </div>
-            </main>
-            
-            <!-- Galería Fotos -->
-            <div class="noticiaGaleria">
-                <!-- <div class="fotoPortadaGaleria">
-                    <div>
-                        <a href="galerias.html"><button class="botonGaleria">Ver FotoGaleria</button></a>
-                    </div>    
-                </div> -->
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                        <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 1</div>
-                </div>
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                            <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 2</div>
-                </div>
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                            <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 3</div>
-                </div>
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                            <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 4</div>
-                </div>
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                        <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 5</div>
-                </div>
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                            <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 6</div>
-                </div>
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                            <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 7</div>
-                </div>
-                <div class="ngContent">
-                    <a target="_blank" href="">
-                            <img src="Imagenes/GALERÍA FOTOS/felinosCampeon.jpg" alt="">
-                    </a>
-                    <div class="tituloGaleria">NOTICIA 8</div>
-                </div>
-                
-            </div>
-
             <!-- Pie de Pagina -->
             <footer class="piePagina">
                 <div class="grupo1">
@@ -141,5 +149,6 @@
                 </div>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>

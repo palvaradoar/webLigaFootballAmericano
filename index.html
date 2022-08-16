@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?familu=Roboto">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS ESTILOS PROPIOS -->
     <link rel="stylesheet" href="estilos.css">
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -18,7 +20,7 @@
             <!-- Encabezado -->
             <header id="encabezado">
                 <div class="navClubes">
-                    <h5>Sitio Web Clubes</h5>
+                    <h1 class="h6">Sitio Web Clubes</h1>
                     <a target="_blank" href="https://www.facebook.com/C.D.Canoneros" class="logoClub"><img src="Imagenes/logoCanoneros.png" alt="Logo Canoneros"></a>
                     <a target="_blank" href="https://www.facebook.com/ferroviariosPuenteAlto" class="logoClub"><img src="./Imagenes/logoFerro.png" alt="Logo Ferro"></a>
                     <a target="_blank" href="https://www.facebook.com/profile.php?id=100063737465365" class="logoClub"><img src="./Imagenes/logoFelinos.png" alt="Logo Felinos"></a>
@@ -26,31 +28,88 @@
                     <a target="_blank" href="https://www.facebook.com/PatriotasFootballAmericano" class="logoClub"><img src="./Imagenes/logoPatriotas.png" alt="Logo Patriotas"></a>
                     <a target="_blank" href="https://www.facebook.com/VolcanosFootball" class="logoClub"><img src="./Imagenes/logoVolcanos.png" alt="Logo Volcanos"></a>
                 </div>
-                <div class="menu">
-                    <img class="logoLiga" src="Imagenes/logoLiga.png" alt="Logo Liga">
-                    <nav id="menuNavegador">
-                        <ul class="menuHorizontal">
-                            <li><a href="noticias.html">NOTICIAS</a></li>
-                            <li><a href="partidos.html">PARTIDOS</a></li>
-                            <li><a href="galerias.html">GALERIAS</a></li>
-                            <li><a href="clubes.html">CLUBES</a></li>
-                            <li><a href="contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </nav>
+                <hr>
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid menuHorizontal ">
+                      <a class="navbar-brand" href="index.html"><img src="Imagenes/logoLiga.png" alt="" width="250" height="me-auto">
+                      </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="partidos.html">PARTIDOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">GALERIAS</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="galerias.html">FOTOGALERIA</a></li>
+                              <li><a class="dropdown-item" href="galerias.html">VIDEOGALERIA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="clubes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLUBES</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">CAÑONEROS</a></li>
+                              <li><a class="dropdown-item" href="#">FERROVIARIOS</a></li>
+                              <li><a class="dropdown-item" href="#">FELINOS</a></li>
+                              <li><a class="dropdown-item" href="#">HUSARES</a></li>
+                              <li><a class="dropdown-item" href="#">PATRIOTAS</a></li>
+                              <li><a class="dropdown-item" href="#">VOLCANOS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>   
+                    </div>
                 </div>
+                </nav>
             </header>
             <!-- Contenido -->
-            <main class="noticiaPrincipal">
-                <div>
-                    <h1>TORNEO DE CLUBES MAS GRANDE DE CHILE</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi repellat nobis minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi repellat nobis minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi repellat nobis minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi repellat nobis minima.</p>
-                </div>
-                <div>
-                    <img src="./Imagenes/NOTICIAS/torneoDeClubes.jpg" alt="Torneo de Clubes">
-                </div>
+            <main>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="Imagenes/NOTICIAS/torneoDeClubes.jpg" class="d-block w-100" alt="Nuevo Inicio de Torneo 2022">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Nuevo Inicio Torneo Football Americano 2022</h5>
+                          <p>Pronto más Noticias</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="Imagenes/portadaVideoGaleriaIndex.jpg" class="d-block w-100" alt="Pretemporada NFL 2022">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Pretemporada NFL 2022</h5>
+                          <p>Pronto más Noticias</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/portadaFotoGaleriaIndex.jpg" class="d-block w-100" alt="Todo sobre la NFL 2022">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Todo sobre la NFL 2022</h5>
+                          <p>Pronto más Noticias</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </main>
 
             <!-- Contenido a la derecha -->
@@ -214,5 +273,6 @@
                 </div>
             </footer>
         </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>

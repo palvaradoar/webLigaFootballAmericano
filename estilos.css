@@ -5,20 +5,19 @@
     box-sizing: border-box;
 }
 body {
-    background-color: cornflowerblue;
+    background-color: #efefef;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .contenedor, .contenedorContacto, .contenedorNoticias, .contenedorClubes {
-    width: 95%;
-    margin: 25px auto;
+    margin: 0px auto;
     padding: 10px;
     height: 100vh;
 }
-.contenedor, .contenedorContacto, .contenedorNoticias, .contenedorClubes .noticiaPrincipal, .sidebar, #seccionNoticias, .fotoGaleria, .videoGaleria, .noticiaClubes, .footer, .menu {
+/* .contenedor, .contenedorContacto, .contenedorNoticias, .contenedorClubes .noticiaPrincipal, .sidebar, #seccionNoticias, .fotoGaleria, .videoGaleria, .noticiaClubes, .footer, .menu {
     padding: 15px;
     /* border: 2px solid crimson; */
     /* border-radius: 4px; */
-}
+} */
 
 .galeriaNoticias, .masNoticias, .galNotClubes{
     background-color: #ffff;
@@ -744,7 +743,7 @@ body {
 
         /******* HEADER NAVEGABLE ********/
         .navClubes {
-            background-color: lightgray;
+            background-color: rgb(255, 255, 255);
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -771,36 +770,40 @@ body {
         }
 
         /******* MENÚ ********/
-        .menu {
+        /* .menu {
             background-color: #ffff;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-        }
-        #menuNavegador {
+        } */
+        /* #menuNavegador {
             width: 60%;
-        }
+        } */
         .logoLiga {
             height: 70%;
         }
+        
         .menuHorizontal {
             list-style: none;
             display: flex;
             flex-direction: row;
             justify-content: right;
+            background-color: #ffff;
         }
         .menuHorizontal li a {
             padding: 10px 25px;
+            margin: 0px 10px; 
             text-decoration: none;
+            justify-content: right;
             font-weight: 700;
             font-size: 16px;
-            color: lightslategrey;
+            color: rgb(76, 76, 76);
             transition: transform 250ms;
             transform: scale(1.1);
         }
         .menuHorizontal li a:hover:not(.logoLiga) {
-            background-color: rgb(219, 205, 72);
+            background-color: crimson;
             color: #ffff;
         }
 }
